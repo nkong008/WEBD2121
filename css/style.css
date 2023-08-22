@@ -1,1 +1,43 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#container {
+  background-color: pink;
+  width: 100vw;
+  height: 100vh;
+  transition: background-color 4s;
+}
+
+@media screen and (max-width: 320px) {
+  #container {
+    background-color: yellow;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 375px) {
+  #container {
+    background-color: orange;
+  }
+}
+@media screen and (min-width: 376px) and (max-width: 425px) {
+  #container {
+    background-color: red;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  #container {
+    background-color: rgb(92, 0, 0);
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  #container {
+    background-color: rgb(55, 9, 77);
+  }
+}
+@media screen and (min-width: 1025px) {
+  #container {
+    background-color: rgb(132, 142, 196);
+  }
+}/*# sourceMappingURL=style.css.map */
