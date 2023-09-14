@@ -63,22 +63,108 @@ $roboto: "Roboto", sans-serif;
 }
 
 #container2 {
+    // margin-bottom: 2em;
   background-color: $backGroundColor2;
   background-image: $backGroundGradiantColor2;
   width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
+//   height: 100vh;
+//   display: flex;
+//   justify-content: center;
+  nav {
+    background-color: black;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    #Logo {
+        width: 100px;
+        height: 100px;
+        background-color: aquamarine;
+        margin-left: 5.5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // background-color: white;
+        div {
+            width: 80%;
+            height: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            border-radius: 50%;
+            border: .5em solid black;
+            span {
+                font-family: $anton;
+                letter-spacing: 0.25em;
+            }
+        }
+    }
+    ul {
+        list-style-type: none;
+        // automatically makes them go to the left. the parent has the flex property
+        margin-left: auto;
+        margin-right: 4.5em;
+        display: flex;
+        align-items: center;
+
+        li {
+            margin: 0 1em;
+            a {
+                color: white;
+                text-decoration: none;
+                font-family: $phudu;
+                letter-spacing: 2px;
+            }
+        }
+    }
+  }
   section {
     width: 80%;
+    width: 100%; //remove later
+    // height: calc(100vh - 100px);
+    // height: 500vh;
+    // height: 450px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    row-gap:  2em;
+    column-gap: 1em;
+    align-content: center;
+    // flex-direction: column;
+    // align-items: center;
+    // align-items: center;
+    // overflow-x: scroll;
+    // flex-direction: column;
+    // align-items: center;
     justify-content: center;
+    // align-items: baseline;
+    // background-color: green;
+    // align-content: space-around;
+    // align-content: flex-start;
+    margin-top: 3em;
+    // adding padding space to make the bottom even with the top
+    padding-bottom: 3em;
+
     div {
+        height: 250px;
+        background-color: rgb(255, 0, 0);
+        width: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // margin: 1em;
+        border-radius: 1em;
       img {
-        width: 200px;
+        width: 235px;
         height: auto;
+        border-radius: .75em;
+        filter: invert(100%) contrast(200%) saturate(300%) opacity(50%);
+        cursor: pointer;
+        transition: all 200ms ease-in-out;
+        position: relative;
+      }
+      img:hover {
+        filter: none;
+        transform: scale(1.20);
       }
     }
   }
