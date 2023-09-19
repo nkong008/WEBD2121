@@ -43,4 +43,11 @@
 }
 #container section div img {
   width: 100%;
+}
+
+@media screen and (min-width: 320px) and (max-width: 550px) {
+  #container section {
+    display: flex;
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=style.css.map */
