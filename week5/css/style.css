@@ -94,9 +94,25 @@
   line-height: 2em;
   padding: 0 1em;
 }
+@media screen and (min-width: 768px) {
+  #container header {
+    width: 50%;
+    margin: 0 auto;
+  }
+  #container header section h1 {
+    font-size: 2.75em;
+  }
+}
 
+@media screen and (min-width: 768px) {
+  #container {
+    background-position: 50% 44%;
+    background-size: contain;
+  }
+}
 #products {
   width: 100%;
+  position: relative;
   top: 100vh;
   background-color: white;
 }
@@ -106,4 +122,12 @@
 }
 #products div img {
   width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  #products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+  }
 }/*# sourceMappingURL=style.css.map */
