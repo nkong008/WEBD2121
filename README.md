@@ -1,2 +1,2 @@
-# WEBD2121-week1
+# WEBD2121
 quick introduction to CSS media Queries 
