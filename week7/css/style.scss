@@ -24,6 +24,7 @@ serif;
 #container {
     width: 100%;
     background-color: $white;
+
     nav {
         width: 100%;
         display: flex;
@@ -33,10 +34,12 @@ serif;
         background-color: $regularBlue;
         height: 80px;
         padding: 1em;
+
         #brand {
 
             h1 {
                 font-size: 1.5em;
+
                 #xd {
                     display: block;
                 }
@@ -53,6 +56,7 @@ serif;
             width: 50px;
             // background: red;
             margin-left: auto;
+
             span {
                 height: 5px;
                 background: $white;
@@ -65,6 +69,7 @@ serif;
         ul {
             visibility: hidden;
             display: none;
+
             li {
                 a {
                     text-decoration: none;
@@ -73,37 +78,46 @@ serif;
             }
         }
     }
+
+    // start of section 1
     #section1 {
         display: flex;
         flex-direction: column-reverse;
         padding: 1em;
+
         div {
             width: 100%;
         }
+
         #section1-div1 {
             display: flex;
             justify-content: center;
+
             img {
                 margin-left: 1em;
                 width: 100%;
             }
         }
+
         #section1-div2 {
             margin-bottom: 1.5em;
+
             h6 {
                 color: $mediumGrey;
                 font-family: $Arial;
                 font-size: 1em;
                 margin: 1em 0 1em 0;
             }
+
             h1 {
-            font-size: 2.5em;
-             color: $regularBlue;
-             font-family: $Georgia;
-             margin: 1em 0 1em 0;
-             font-weight: 100;
-             margin-bottom: 1em;
+                font-size: 2.5em;
+                color: $regularBlue;
+                font-family: $Georgia;
+                margin: 1em 0 1em 0;
+                font-weight: 100;
+                margin-bottom: 1em;
             }
+
             button {
                 background: none;
                 color: $regularBlue;
@@ -116,6 +130,9 @@ serif;
         }
     }
 
+    // end of section 1////////////////////////////////
+
+    // start of section 2
     #section2 {
         #section2-child {
             #section-left {
@@ -143,6 +160,7 @@ serif;
                 // background-color: $white;
                 display: flex;
                 flex-direction: column;
+
                 img {
                     padding: 0.5em 1em;
                 }
@@ -151,10 +169,153 @@ serif;
 
         }
     }
+
+    // end of section 2////////////////////////////////
+
+    // start of section 3
+    #cards {
+
+        .section3 {
+            width: 100%;
+            padding: 0.5em 1.5em;
+
+            .section3-sections {
+                display: flex;
+                align-items: center;
+
+                img {
+                    margin-right: 0.5em;
+                }
+
+                h3 {
+                    font-family: $Arial;
+                    color: $regularBlue;
+                    font-size: 0.5em;
+                }
+
+                span {
+                    margin-left: auto;
+                    color: $mediumGrey;
+                    font-family: $Arial;
+                    font-size: 0.5em;
+                }
+            }
+
+            p {
+                font-family: $Arial;
+                color: $lightGrey;
+                font-size: 0.75em;
+                line-height: 1.5em;
+                margin-top: 2em;
+            }
+
+            img.profiles {
+                width: 100%;
+                margin-top: 2em;
+            }
+
+            .footer {
+                display: flex;
+                margin-top: 2em;
+
+                h3 {
+                    margin-left: auto;
+                    color: $regularBlue;
+                    font-family: $Arial;
+                    font-size: 0.75em;
+                }
+            }
+        }
+    }
+
+    #section-4 {
+        margin-top: 2em;
+        // height: 600px;
+        width: 100%;
+        background-color: $lightBlue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        div {
+            margin-top: 2em;
+            width: 90%;
+            height: 90%;
+            background-color: $white;
+            padding: 1em;
+
+            h1 {
+                color: $mediumGrey;
+                font-family: $Georgia;
+                font-size: 2em;
+            }
+
+            p:nth-of-type(1) {
+                color: $mediumGrey;
+                font-family: $Arial;
+                font-size: 1.25em;
+                margin: 0.25em 0 1em 0;
+            }
+
+            p:nth-of-type(2) {
+                color: $regularBlue;
+                font-family: $Arial;
+                font-size: 0.75em;
+                line-height: 1.5em;
+            }
+
+            #div-boxes {
+                width: 100%;
+                // stops it from having too much space because it was inhereting margin top
+                margin: 0;
+
+                .boxes {
+                    width: 100%;
+                    height: 150px;
+                    background-color: $veryLightBlue;
+                    // splits them into three section 
+                    margin: 0.5em 0;
+                    display: flex;
+                    align-items: center;
+                    padding: 2em;
+
+                    #price {
+                        display: flex;
+                        flex-direction: column;
+                        // was inherenting color so we need to add this
+                        background-color: transparent;
+
+                        h3,
+                        span {
+                            color: $regularBlue;
+                            font-family: $Arial;
+                            font-size: 0.8em;
+                        }
+                    }
+
+                    div.plus {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 50px;
+                        height: 50px;
+                        font-size: 1.5em;
+                        border-radius: 50%;
+                        // setting margin again to 0 because it is inhereting again
+                        margin: 0;
+                        margin-left: auto;
+                        color: $regularBlue;
+                    }
+                }
+            }
+        }
+    }
+
+    // end of section 3////////////////////////////
 }
 
-// media query screen 852px starts here
 
+// media query screen 852px starts here
 // @media screen and (min-width: 852px) {
 
 
@@ -166,7 +327,7 @@ serif;
 //             display: flex;
 //             padding: 0 3em;
 //             align-items: center;
-           
+
 
 //             ul {
 //                 display: flex;
@@ -177,7 +338,7 @@ serif;
 //                     padding: 0.5em;
 
 //                     // a {
-                        
+
 
 //                     // }
 //                 }
