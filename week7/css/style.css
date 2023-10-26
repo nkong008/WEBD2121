@@ -443,4 +443,38 @@ nav #navigation ul li a {
   #container footer section #address p {
     text-align: center;
   }
+}
+@media screen and (min-width: 1366px) {
+  nav {
+    display: flex;
+    padding: 0 3em;
+    align-items: center;
+  }
+  nav #menu {
+    display: none;
+  }
+  nav #navigation {
+    display: block;
+    position: static;
+    top: 0;
+    height: auto;
+    width: auto;
+    margin-left: auto;
+  }
+  nav #navigation ul {
+    position: static;
+    top: 0;
+    width: auto;
+    height: auto;
+    flex-direction: row;
+  }
+  nav #navigation ul li {
+    padding: 0.5em;
+  }
+  nav #navigation ul #signup {
+    border: 1px solid #ffffff;
+    padding: 0.5em 1em;
+    margin-left: 1em;
+    border-radius: 0.5em;
+  }
 }/*# sourceMappingURL=style.css.map */

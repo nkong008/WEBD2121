@@ -601,7 +601,41 @@ nav {
 
 // media query screen 852px ends here/////////////////////////
 
-// media query screen 1920px starts here 
+// media query screen 1366px starts here for desktop
+@media screen and (min-width: 1366px) {
+    nav {
+        display: flex;
+        padding: 0 3em;
+        align-items: center;
+        #menu {
+            display: none;
+        }
+        #navigation {
+            display: block;
+            position: static;
+            top: 0;
+            height: auto;
+            width: auto;
+            margin-left: auto;
+            ul {
+                position: static;
+                top: 0;
+                width: auto;
+                height: auto; 
+                flex-direction: row;
+                li {
+                    padding: 0.5em;
+                }
+                #signup {
+                    border: 1px solid $white;
+                    padding: 0.5em 1em;
+                    margin-left: 1em;
+                    border-radius: 0.5em;
+                }
+            }
+        }
+    }
+}
 
 
 // media query screen 1920px ends here//////////////////////// 
