@@ -477,4 +477,49 @@ nav #navigation ul li a {
     margin-left: 1em;
     border-radius: 0.5em;
   }
+  #container #section1 {
+    flex-direction: row;
+  }
+  #container #section1 #section1-div1 {
+    padding-left: 1em;
+  }
+  #container #section1 #section1-div2 {
+    margin-bottom: 45em;
+    margin-left: 4em;
+  }
+  #container #section1 #section1-div2 h6 {
+    font-size: 20px;
+  }
+  #container #section2 #section2-child {
+    padding-left: 3em;
+    flex-direction: row;
+  }
+  #container #section2 #section2-child #section-left {
+    width: 40%;
+    margin-right: auto;
+  }
+  #container #section2 #section2-child #section-left div h1 {
+    font-size: 40px;
+  }
+  #container #section2 #section2-child #section-left div p {
+    font-size: 14px;
+  }
+  #container #section2 #section2-child #section-right {
+    width: 60%;
+    margin-right: 3em;
+  }
+  #container #cards {
+    padding: 3em;
+    margin-top: 3em;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding-bottom: 4em;
+  }
+  #container #cards .section3-sections {
+    padding-top: 4em;
+  }
+  #container #section-4 #section-4-div #div-boxes {
+    display: block;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -635,6 +635,89 @@ nav {
             }
         }
     }
+
+    #container {
+         
+        #section1 {
+            flex-direction: row;
+            #section1-div1 {
+              padding-left: 1em;
+            }
+
+            #section1-div2 {
+                margin-bottom: 45em;
+                margin-left: 4em;
+                h6 {
+                    font-size: 20px;
+                }
+                h1 {
+                  
+                }
+            }
+        }
+
+        #section2 {
+            #section2-child {
+                padding-left: 3em;
+                flex-direction: row;
+                
+                #section-left {
+                    // height: 100%;
+                    width: 40%;
+                    margin-right: auto;
+                    
+                    div {
+                        // height: 100vh;
+                        h1 {
+                            font-size: 40px;
+                        }
+                        p {
+                            font-size: 14px;
+                        }
+                    }
+                }
+                #section-right {
+                    // display: flex;
+                    // flex-direction: row;
+                    // height: 100%;
+                    width: 60%;
+                    margin-right: 3em;
+                    // display: inline-block;
+                }
+            }
+        }
+
+        #cards {
+            padding: 3em;
+            margin-top: 3em;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            padding-bottom: 4em;
+
+            .section3-sections{
+                padding-top: 4em;
+            }
+        }
+
+        #section-4 {
+            // display: flex;
+            #section-4-div {
+                // display: flex;
+                // flex-direction:row;
+                // display:inline-block;
+                // position: static;
+                #div-boxes {
+                    display: block;
+                    // flex-direction:row;
+                    // display: grid;
+                    // grid-template-rows: repeat(2, 1fr);
+                    // position: absolute;
+                    }
+                }
+            }
+         
+    }
 }
 
 
