@@ -655,8 +655,10 @@ nav {
         }
     }
 
+    //  start of container 
     #container {
 
+        // start of section one 
         #section1 {
             flex-direction: row;
 
@@ -675,7 +677,9 @@ nav {
                 h1 {}
             }
         }
+        // end of section 1 /////////////////////
 
+        // start of section 2
         #section2 {
             // height:fit-content;
             // height: fit-content;
@@ -721,7 +725,9 @@ nav {
                 }
             }
         }
+        // end of section 2///////////////////
 
+        // start of section 3
         #cards {
             padding: 3em;
             margin-top: 3em;
@@ -734,7 +740,9 @@ nav {
                 padding-top: 4em;
             }
         }
+        // end of section 3////////////////////////
 
+        // start of section 4
         #section-4 {
             padding: 4em;
             #section-4-div {
@@ -748,12 +756,13 @@ nav {
                     // margin-top: 5em;
                     margin-left: 5em;
                     h1 {
+                        z-index: 4;
                         margin-top: 3em;
                         font-size: 40px;
                         // margin-left: 4em;
                     }
-
                     p {
+                        margin-top: 2em;
                         font-size: 14px;
                         width: 80%;
                     }
@@ -772,8 +781,95 @@ nav {
                 }
             }
         }
+        // end of section 4 ///////////////////////
+
+        // start of footer
+
+        footer {
+         
+            display: flex;
+            // flex-wrap: none;
+            // display: block;
+            // width: 100%;
+            section {
+                width: 100%;
+                h3 {
+                    z-index: 10;
+                    width: 10%;
+                    float: left;
+                }
+                p {
+                    text-align: center;
+                    z-index: 7;
+                    // width: 30%;
+                }
+                form {
+                    // margin-top: 10em;
+                    z-index: 11;
+                    width: 20%;
+                    // margin-left: 10px;
+                    margin-right: 34%;
+                }
+
+                section#footer-nav {
+                    // z-index: ;
+                    width: 35%;
+                    padding-right: 13em;
+                    // margin: 0em 0em 0em 15em;
+                    margin-left: 15em;
+                    float: left;
+                    // margin-bottom: 3em;
+                    // margin-top: 2em;
+                    ul {
+                        // margin-top: 2em;
+                        // padding-top: 3em;
+                        li {
+                            z-index: 2;
+                            padding-right: none;
+                            // padding-top: 4em;
+                            // margin-top: 1em;
+                            // padding-right: none;
+                        }
+                        li{
+                            z-index: 2;
+                            // padding-right: 9em;
+                            // position: absolute;
+                            // padding-left: 5em;
+                            svg {
+
+                            }
+                        }
+                    }
+                }
+
+                section#address {
+                 
+                    p {
+                        height: 20%;
+                        z-index: 10;
+                        // position: absolute;
+                        // display: flex;
+                        // margin-inline-end: auto;
+                        margin-left: 60em;
+                        // bottom: 4em
+                        // margin-bottom: 40em;
+                        // margin-block-end: auto;
+                       span {
+                        // position: absolute;
+                        // margin-right: 60em;
+                        // z-index: 1;
+                        // float:left;
+                        //   width: 5%;
+                       }
+                    }
+                }
+            }
+           
+        }
+        // end of footer ///////////////////////////////
 
     }
+    // end of container ////////////////////////////////
 }
 
 

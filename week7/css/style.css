@@ -532,10 +532,12 @@ nav #navigation ul li a {
     margin-left: 5em;
   }
   #container #section-4 #section-4-div div.info-1 h1 {
+    z-index: 4;
     margin-top: 3em;
     font-size: 40px;
   }
   #container #section-4 #section-4-div div.info-1 p {
+    margin-top: 2em;
     font-size: 14px;
     width: 80%;
   }
@@ -545,5 +547,43 @@ nav #navigation ul li a {
   #container #section-4 #section-4-div #div-boxes .boxes {
     border-radius: 0%;
     margin: 0.15em;
+  }
+  #container footer {
+    display: flex;
+  }
+  #container footer section {
+    width: 100%;
+  }
+  #container footer section h3 {
+    z-index: 10;
+    width: 10%;
+    float: left;
+  }
+  #container footer section p {
+    text-align: center;
+    z-index: 7;
+  }
+  #container footer section form {
+    z-index: 11;
+    width: 20%;
+    margin-right: 34%;
+  }
+  #container footer section section#footer-nav {
+    width: 35%;
+    padding-right: 13em;
+    margin-left: 15em;
+    float: left;
+  }
+  #container footer section section#footer-nav ul li {
+    z-index: 2;
+    padding-right: none;
+  }
+  #container footer section section#footer-nav ul li {
+    z-index: 2;
+  }
+  #container footer section section#address p {
+    height: 20%;
+    z-index: 10;
+    margin-left: 60em;
   }
 }/*# sourceMappingURL=style.css.map */
