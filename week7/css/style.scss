@@ -337,81 +337,103 @@ nav {
     footer {
         background-color: $regularBlue;
 
-        h3,
-        p {
-            font-family: $Arial;
-            color: $white;
+        #footer-section {
 
-        }
-
-        h3 {
-            padding: 0.5em 1em 0 1em;
-        }
-
-        p {
-            // text-align: center;
-            // padding: 0.5em 1em;
-            text-align: left;
-            padding: 1.5em;
-            line-height: 1.5em;
-        }
-
-        form {
-            display: grid;
-            grid-template-columns: 70% 30%;
-            justify-content: center;
-            border: 1px solid $white;
-            width: 70%;
-            // helps us center 
-            margin: 0 auto;
-            border-radius: 0.5em;
-            // cuts off any unessecary stuff
-            overflow: hidden;
-
-            input,
-            button {
-                padding-block: 0;
-                padding-inline: 0;
-                border: none;
+            h3,
+            p {
                 font-family: $Arial;
-                padding: 1em;
-            }
-
-            input {
-                background-color: inherit;
                 color: $white;
+
             }
 
-            // helps edit the text for the placeholder
-            input::placeholder {
-                opacity: 1;
-                color: $white;
+            h3 {
+                padding: 0.5em 1em 0 1em;
             }
 
-            button {
-                color: $regularBlue;
-                background-color: $white;
+            p#subscribe {
+                // text-align: center;
+                // padding: 0.5em 1em;
+                text-align: center;
+                padding: 1.5em;
+                line-height: 1.5em;
             }
-        }
 
-        #footer-nav {
-            padding: 1em;
-            font-family: $Arial;
-            color: $white;
-            font-size: 12px;
-
-            ul {
-                list-style-type: none;
+            form {
                 display: grid;
-                grid-template-columns: 60% 10% 30%;
-                grid-template-rows: repeat(3, 1fr);
+                grid-template-columns: 70% 30%;
+                justify-content: center;
+                border: 1px solid $white;
+                width: 70%;
+                // helps us center 
+                margin: 0 auto;
+                border-radius: 0.5em;
+                // cuts off any unessecary stuff
+                overflow: hidden;
 
-                // .social {
-                // margin-left: 1em;
-                // }
-                li {
-                    padding: 0.25em;
+                input,
+                button {
+                    padding-block: 0;
+                    padding-inline: 0;
+                    border: none;
+                    font-family: $Arial;
+                    padding: 1em;
                 }
+
+                input {
+                    background-color: inherit;
+                    color: $white;
+                }
+
+                // helps edit the text for the placeholder
+                input::placeholder {
+                    opacity: 1;
+                    color: $white;
+                }
+
+                button {
+                    color: $regularBlue;
+                    background-color: $white;
+                }
+            }
+
+            #footer-nav {
+                padding: 1em;
+                font-family: $Arial;
+                color: $white;
+                font-size: 12px;
+
+                ul {
+                    list-style-type: none;
+                    display: grid;
+                    grid-template-columns: 60% 10% 30%;
+                    grid-template-rows: repeat(3, 1fr);
+
+                    // .social {
+                    // margin-left: 1em;
+                    // }
+                    li {
+                        padding: 0.25em;
+                    }
+                }
+            }
+
+            #address {
+                padding: 1em;
+                // font-size: 0.75em;
+                #address-paragraph {
+                    display: flex;
+                    flex-direction: column;
+                    span {
+                        padding: 0.25em 0;
+                    }
+                    span#kit{
+                        font-size: 0.75em;
+                    }
+                }
+            }
+
+            #copyright {
+                display: none;
             }
         }
     }
@@ -604,6 +626,11 @@ nav {
 
                     p {
                         text-align: center;
+
+                    }
+
+                    #copyright {
+                        display: none;
                     }
                 }
             }
@@ -677,10 +704,12 @@ nav {
                 h1 {}
             }
         }
+
         // end of section 1 /////////////////////
 
         // start of section 2
         #section2 {
+
             // height:fit-content;
             // height: fit-content;
             // height: 50%;
@@ -718,13 +747,14 @@ nav {
                     // position: absolute;
                     width: 60%;
                     margin-right: 3em;
-                  
+
                     img {
                         // height: 50%;
                     }
                 }
             }
         }
+
         // end of section 2///////////////////
 
         // start of section 3
@@ -740,27 +770,31 @@ nav {
                 padding-top: 4em;
             }
         }
+
         // end of section 3////////////////////////
 
         // start of section 4
         #section-4 {
             padding: 4em;
+
             #section-4-div {
                 // height: 50%;
                 box-shadow: 10px 10px 20px $lightGrey;
                 padding: 0%;
                 width: 60%;
                 display: flex;
-            
+
                 div.info-1 {
                     // margin-top: 5em;
                     margin-left: 5em;
+
                     h1 {
                         z-index: 4;
                         margin-top: 3em;
                         font-size: 40px;
                         // margin-left: 4em;
                     }
+
                     p {
                         margin-top: 2em;
                         font-size: 14px;
@@ -771,104 +805,93 @@ nav {
 
                 #div-boxes {
                     display: block;
-                    
-                .boxes {
-                    border-radius: 0%;
-                    margin: 0.15em;
-                
-                }
-                    
+
+                    .boxes {
+                        border-radius: 0%;
+                        margin: 0.15em;
+
+                    }
+
                 }
             }
         }
+
         // end of section 4 ///////////////////////
 
         // start of footer
 
         footer {
-         
-            display: flex;
-            // flex-wrap: none;
-            // display: block;
-            // width: 100%;
-            section {
-                width: 100%;
+            font-size: 12px;
+            #footer-section {
+                padding: 1em 0;
+                width: 90%;
+                //    use grid logic to complete
+                display: grid;
+                grid-template-columns: 15% 30% 20% 35%;
+                grid-template-rows: 70% 30%;
+                grid-template-areas:
+                    "one two three four"
+                    "five six seven eight";
+                grid-gap: 0px 0px;
+
                 h3 {
-                    z-index: 10;
-                    width: 10%;
-                    float: left;
-                }
-                p {
-                    text-align: center;
-                    z-index: 7;
-                    // width: 30%;
-                }
-                form {
-                    // margin-top: 10em;
-                    z-index: 11;
-                    width: 20%;
-                    // margin-left: 10px;
-                    margin-right: 34%;
+                    grid-area: one;
                 }
 
-                section#footer-nav {
-                    // z-index: ;
-                    width: 35%;
-                    padding-right: 13em;
-                    // margin: 0em 0em 0em 15em;
-                    margin-left: 15em;
-                    float: left;
-                    // margin-bottom: 3em;
-                    // margin-top: 2em;
-                    ul {
-                        // margin-top: 2em;
-                        // padding-top: 3em;
-                        li {
-                            z-index: 2;
-                            padding-right: none;
-                            // padding-top: 4em;
-                            // margin-top: 1em;
-                            // padding-right: none;
-                        }
-                        li{
-                            z-index: 2;
-                            // padding-right: 9em;
-                            // position: absolute;
-                            // padding-left: 5em;
-                            svg {
+                #footer-nav {
+                    grid-area: two;
+                }
 
-                            }
+                p#subscribe {
+                    position: relative;
+                    top: 0.75em;
+                    grid-area: three;
+                    padding: 0;
+                    text-align: left;
+                }
+
+                #address {
+                    position: relative;
+                    left: 4em;
+                    grid-area: four;
+                    font-size: 12px;
+
+                    p#address-paragraph {
+                        text-align: left;
+
+                        span#kit {
+                            display: none;
                         }
                     }
+
                 }
 
-                section#address {
-                 
+                form {
+                    grid-area: seven;
+                    width: 100%;
+                    // margin: 0;
+                    position: relative;
+                    // move it more up
+                    top: -4em;
+                }
+
+                #copyright {
+                    display: block;
+                    grid-area: five;
+                    padding: 0;
+
                     p {
-                        height: 20%;
-                        z-index: 10;
-                        // position: absolute;
-                        // display: flex;
-                        // margin-inline-end: auto;
-                        margin-left: 60em;
-                        // bottom: 4em
-                        // margin-bottom: 40em;
-                        // margin-block-end: auto;
-                       span {
-                        // position: absolute;
-                        // margin-right: 60em;
-                        // z-index: 1;
-                        // float:left;
-                        //   width: 5%;
-                       }
+                        padding: 0;
                     }
                 }
             }
-           
+
         }
+
         // end of footer ///////////////////////////////
 
     }
+
     // end of container ////////////////////////////////
 }
 

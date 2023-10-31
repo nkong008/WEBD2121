@@ -251,20 +251,20 @@ nav #navigation ul li a {
 #container footer {
   background-color: #2699FB;
 }
-#container footer h3,
-#container footer p {
+#container footer #footer-section h3,
+#container footer #footer-section p {
   font-family: Arial, Helvetica, sans-serif;
   color: #ffffff;
 }
-#container footer h3 {
+#container footer #footer-section h3 {
   padding: 0.5em 1em 0 1em;
 }
-#container footer p {
-  text-align: left;
+#container footer #footer-section p#subscribe {
+  text-align: center;
   padding: 1.5em;
   line-height: 1.5em;
 }
-#container footer form {
+#container footer #footer-section form {
   display: grid;
   grid-template-columns: 70% 30%;
   justify-content: center;
@@ -274,48 +274,64 @@ nav #navigation ul li a {
   border-radius: 0.5em;
   overflow: hidden;
 }
-#container footer form input,
-#container footer form button {
+#container footer #footer-section form input,
+#container footer #footer-section form button {
   padding-block: 0;
   padding-inline: 0;
   border: none;
   font-family: Arial, Helvetica, sans-serif;
   padding: 1em;
 }
-#container footer form input {
+#container footer #footer-section form input {
   background-color: inherit;
   color: #ffffff;
 }
-#container footer form input::-moz-placeholder {
+#container footer #footer-section form input::-moz-placeholder {
   opacity: 1;
   color: #ffffff;
 }
-#container footer form input:-ms-input-placeholder {
+#container footer #footer-section form input:-ms-input-placeholder {
   opacity: 1;
   color: #ffffff;
 }
-#container footer form input::placeholder {
+#container footer #footer-section form input::placeholder {
   opacity: 1;
   color: #ffffff;
 }
-#container footer form button {
+#container footer #footer-section form button {
   color: #2699FB;
   background-color: #ffffff;
 }
-#container footer #footer-nav {
+#container footer #footer-section #footer-nav {
   padding: 1em;
   font-family: Arial, Helvetica, sans-serif;
   color: #ffffff;
   font-size: 12px;
 }
-#container footer #footer-nav ul {
+#container footer #footer-section #footer-nav ul {
   list-style-type: none;
   display: grid;
   grid-template-columns: 60% 10% 30%;
   grid-template-rows: repeat(3, 1fr);
 }
-#container footer #footer-nav ul li {
+#container footer #footer-section #footer-nav ul li {
   padding: 0.25em;
+}
+#container footer #footer-section #address {
+  padding: 1em;
+}
+#container footer #footer-section #address #address-paragraph {
+  display: flex;
+  flex-direction: column;
+}
+#container footer #footer-section #address #address-paragraph span {
+  padding: 0.25em 0;
+}
+#container footer #footer-section #address #address-paragraph span#kit {
+  font-size: 0.75em;
+}
+#container footer #footer-section #copyright {
+  display: none;
 }
 
 @media screen and (min-width: 852px) {
@@ -443,6 +459,9 @@ nav #navigation ul li a {
   #container footer section #address p {
     text-align: center;
   }
+  #container footer section #address #copyright {
+    display: none;
+  }
 }
 @media screen and (min-width: 1366px) {
   nav {
@@ -549,41 +568,54 @@ nav #navigation ul li a {
     margin: 0.15em;
   }
   #container footer {
-    display: flex;
+    font-size: 12px;
   }
-  #container footer section {
+  #container footer #footer-section {
+    padding: 1em 0;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 15% 30% 20% 35%;
+    grid-template-rows: 70% 30%;
+    grid-template-areas: "one two three four" "five six seven eight";
+    grid-gap: 0px 0px;
+  }
+  #container footer #footer-section h3 {
+    grid-area: one;
+  }
+  #container footer #footer-section #footer-nav {
+    grid-area: two;
+  }
+  #container footer #footer-section p#subscribe {
+    position: relative;
+    top: 0.75em;
+    grid-area: three;
+    padding: 0;
+    text-align: left;
+  }
+  #container footer #footer-section #address {
+    position: relative;
+    left: 4em;
+    grid-area: four;
+    font-size: 12px;
+  }
+  #container footer #footer-section #address p#address-paragraph {
+    text-align: left;
+  }
+  #container footer #footer-section #address p#address-paragraph span#kit {
+    display: none;
+  }
+  #container footer #footer-section form {
+    grid-area: seven;
     width: 100%;
+    position: relative;
+    top: -4em;
   }
-  #container footer section h3 {
-    z-index: 10;
-    width: 10%;
-    float: left;
+  #container footer #footer-section #copyright {
+    display: block;
+    grid-area: five;
+    padding: 0;
   }
-  #container footer section p {
-    text-align: center;
-    z-index: 7;
-  }
-  #container footer section form {
-    z-index: 11;
-    width: 20%;
-    margin-right: 34%;
-  }
-  #container footer section section#footer-nav {
-    width: 35%;
-    padding-right: 13em;
-    margin-left: 15em;
-    float: left;
-  }
-  #container footer section section#footer-nav ul li {
-    z-index: 2;
-    padding-right: none;
-  }
-  #container footer section section#footer-nav ul li {
-    z-index: 2;
-  }
-  #container footer section section#address p {
-    height: 20%;
-    z-index: 10;
-    margin-left: 60em;
+  #container footer #footer-section #copyright p {
+    padding: 0;
   }
 }/*# sourceMappingURL=style.css.map */
