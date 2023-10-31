@@ -261,7 +261,7 @@ nav #navigation ul li a {
 }
 #container footer #footer-section p#subscribe {
   text-align: center;
-  padding: 1.5em;
+  padding: 0.5em 0;
   line-height: 1.5em;
 }
 #container footer #footer-section form {
